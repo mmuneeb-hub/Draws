@@ -1,104 +1,106 @@
 
- * {
-    margin:0;
-    font-family:Arial ;
-    border: border-box;
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
+
+/* NAVBAR */
+
 .navbar {
     height: 80px;
-    background-color:#780000;
+    background-color: #780000;
     color: #f2e8cf;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-   
-   
 }
-
 
 .nav-logo {
     height: 62px;
     width: 100px;
-} 
-.logo {
-     background-image: url("C:/Users/Muneeb/Downloads/Roozyy Cat and Skull Emblem.png");
-     background-size:cover;
-     height:62px;
-     width:100px;
-     background-repeat: no-repeat;
-    background-position: center;
-     
 }
+
+.logo {
+    background-image: url("images/Roozyy Cat and Skull Emblem.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 62px;
+    width: 100px;
+}
+
 .border {
     border: 2px solid transparent;
-  
 }
 
 .border:hover {
     border: 2px solid white;
 }
 
-/** box2 **/
+/* ADDRESS */
+
 .add-first {
     color: white;
     font-size: 0.85rem;
     margin-left: 15px;
-   
 }
+
 .add-second {
     font-size: 1rem;
-    margin-left:3px;s
-
+    margin-left: 3px;
 }
+
 .add-icon {
     display: flex;
     align-items: center;
 }
+
 .fa-duotone {
     color: #38040e;
 }
-/**box3**/
+
+/* SEARCH BAR */
 
 .nav-search {
     display: flex;
     justify-content: space-evenly;
     background-color: #f3722c;
-    height: 40px ;
+    height: 40px;
     width: 620px;
-    border-radius:4px ;
+    border-radius: 4px;
 }
+
 .Search-select {
-    background-color:#f3f3f3;
-    width:50px ;
+    background-color: #f3f3f3;
+    width: 50px;
     text-align: center;
-    border-top-right-radius:4px ;
+    border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    border:none ;
+    border: none;
 }
 
 .search-input {
     width: 100%;
     font-size: 1rem;
     border: none;
-    
 }
 
 .Search-icon {
-    width:45px ;
+    width: 45px;
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
-    background-color:#f3722c ;
+    background-color: #f3722c;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
 
 .nav-search:hover {
-        border: 4px solid orange;
-    }
+    border: 4px solid orange;
+}
 
-
-/**box4**/
+/* ACCOUNT */
 
 span {
     font-size: 0.7rem;
@@ -106,20 +108,19 @@ span {
 
 .nav-second {
     font-size: 0.85rem;
-    font-weight:700;
-
+    font-weight: 700;
 }
 
 .navbar p,
 .navbar span {
     text-shadow:
         0.5px 0.5px 0 black,
-       -0.5px -0.5px 0 black,
+        -0.5px -0.5px 0 black,
         0.5px -0.5px 0 black,
-       -0.5px 0.5px 0 black;
+        -0.5px 0.5px 0 black;
 }
 
-/**box5**/
+/* CART */
 
 .nav-cart i {
     font-size: 30px;
@@ -130,7 +131,7 @@ span {
     font-weight: 700;
 }
 
-/**panel **/
+/* PANEL */
 
 .panel {
     height: 50px;
@@ -147,44 +148,46 @@ span {
     margin-left: 10px;
 }
 
-.panel-ops{
+.panel-ops {
     width: 80%;
     font-size: 0.95rem;
 }
 
-.panel-deals  {
+.panel-deals {
     font-size: 0.9rem;
     font-weight: 700;
 }
 
-/** hero section **/
+/* HERO SECTION */
+
 .hero-section {
-    background-image: url("C:/Users/Muneeb/Downloads/bgff.jpeg");
+    background-image: url("images/bgff.jpeg");
     background-size: 100% 100%;
-    display: flex;
     background-repeat: no-repeat;
+    display: flex;
     height: 600px;
     justify-content: center;
     align-items: flex-end;
 }
 
 .hero-msg {
-    background-color:#003049 ;
-    color:#f2e8cf ;
+    background-color: #003049;
+    color: #f2e8cf;
     height: 40px;
-    display: flex ;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.95rem;
     width: 85%;
-    margin-bottom:25px ;
+    margin-bottom: 25px;
 }
 
 .hero-msg a {
-    color: #003049;
+    color: #f2e8cf;
 }
 
-/** shoppong **/
+/* SHOPPING SECTION */
+
 .shopping {
     display: flex;
     flex-wrap: wrap;
@@ -220,9 +223,13 @@ span {
     color: #003049;
 }
 
+/* BODY */
+
 body {
     background-color: #780000;
 }
+
+/* TOP BANNER */
 
 .top-banner {
     background-color: #BC4749;
@@ -233,6 +240,7 @@ body {
     border: 2px solid white;
     width: 90%;
     margin: auto;
+    position: relative;
 }
 
 .top-banner h1 {
@@ -255,29 +263,25 @@ body {
     cursor: pointer;
 }
 
-.top-banner {
-    position: relative;
-}
+/* FOOTER */
 
-/** footer panel **/
-
-.footer{
-    margin-top:15px;
+.footer {
+    margin-top: 15px;
 }
 
 .foot-panel1 {
-    background-color:#f2e8cf;
+    background-color: #f2e8cf;
     color: #BC4749;
-    height:50px ;
-    display:flex ;
-    justify-content:center ;
-    align-items:center ;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.90rem;
 }
 
 .foot-panel2 {
     background-color: #BC4749;
-    color:white ;
+    color: white;
     height: 300px;
     display: flex;
     justify-content: space-evenly;
@@ -291,12 +295,12 @@ body {
     display: flex;
     font-size: 0.85rem;
     margin-top: 30px;
-    color: #dddd;
+    color: #dddddd;
 }
 
 .foot-panel3 {
-     background-color: #BC4749;
-    color:white ;
+    background-color: #BC4749;
+    color: white;
     border-top: 2px solid slategray;
     height: 70px;
     display: flex;
@@ -304,23 +308,12 @@ body {
     align-items: center;
 }
 
-.logo {
-    background-image: url("C:/Users/Muneeb/Downloads/Roozyy Cat and Skull Emblem.png");
-     background-size:cover;
-     height:62px;
-     width:100px;
-}
-
 .foot-panel4 {
-     background-color: #780000;
-    color:white ;
+    background-color: #780000;
+    color: white;
     height: 80px;
     font-size: 0.75rem;
     text-align: center;
-    /* display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-*/
 }
 
 .pages {
