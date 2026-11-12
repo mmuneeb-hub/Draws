@@ -22,12 +22,12 @@
 }
 
 .logo {
-    background-image: url("images/Roozyy Cat and Skull Emblem.png");
+    background-image: url("Roozyy Cat and Skull Emblem.png");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 62px;
     width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .border {
@@ -60,7 +60,7 @@
     color: #38040e;
 }
 
-/* SEARCH BAR */
+/* SEARCH */
 
 .nav-search {
     display: flex;
@@ -75,8 +75,6 @@
     background-color: #f3f3f3;
     width: 50px;
     text-align: center;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
     border: none;
 }
 
@@ -161,10 +159,10 @@ span {
 /* HERO SECTION */
 
 .hero-section {
-    background-image: url("images/bgff.jpeg");
+    background-image: url("bgff.jpeg");
     background-size: 100% 100%;
-    background-repeat: no-repeat;
     display: flex;
+    background-repeat: no-repeat;
     height: 600px;
     justify-content: center;
     align-items: flex-end;
@@ -186,7 +184,7 @@ span {
     color: #f2e8cf;
 }
 
-/* SHOPPING SECTION */
+/* SHOPPING */
 
 .shopping {
     display: flex;
@@ -201,7 +199,6 @@ span {
     background-color: white;
     padding: 20px 0 15px;
     margin-top: 20px;
-    box-sizing: border-box;
 }
 
 .box-img {
@@ -279,16 +276,23 @@ body {
     font-size: 0.90rem;
 }
 
+.foot-panel1 a {
+    color: #BC4749;
+    text-decoration: none;
+}
+
 .foot-panel2 {
     background-color: #BC4749;
     color: white;
-    height: 300px;
+    min-height: 300px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .ul {
     margin: 20px;
+    list-style: none;
 }
 
 .ul a {
@@ -296,6 +300,7 @@ body {
     font-size: 0.85rem;
     margin-top: 30px;
     color: #dddddd;
+    text-decoration: none;
 }
 
 .foot-panel3 {
@@ -311,7 +316,7 @@ body {
 .foot-panel4 {
     background-color: #780000;
     color: white;
-    height: 80px;
+    min-height: 80px;
     font-size: 0.75rem;
     text-align: center;
 }
@@ -320,6 +325,85 @@ body {
     padding-top: 22px;
 }
 
+.pages a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
 .copyright {
     padding-top: 13px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .nav-search {
+        width: 100%;
+        order: 5;
+    }
+
+    .panel-ops {
+        width: auto;
+    }
+
+    .panel-ops p {
+        margin-left: 5px;
+    }
+
+    .panel-deals {
+        display: none;
+    }
+
+    .hero-section {
+        height: 350px;
+    }
+
+    .shopping {
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .box {
+        width: 47%;
+        height: 390px;
+    }
+
+    .box-img {
+        height: 260px;
+    }
+
+    .box-content h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+        height: 430px;
+    }
+
+    .box-img {
+        height: 310px;
+    }
+
+    .hero-msg {
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+    }
 }
